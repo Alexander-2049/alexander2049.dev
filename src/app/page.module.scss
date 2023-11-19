@@ -1,0 +1,27 @@
+.main {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  display: inline-block;
+  color: red;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.points {
+  width: 370px;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 768px) {
+  .points {
+    display: none;
+  }
+}
