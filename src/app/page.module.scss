@@ -3,25 +3,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 48px;
 }
 
 .link {
   display: inline-block;
-  color: red;
+  color: #f90808;
   transition: all 0.15s ease-in-out;
 
-  &:hover {
-    transform: scale(1.05);
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.3rem;
+    background-color: #f90808;
+    transition: all 0.15s ease-in-out;
   }
-}
 
-.points {
-  width: 370px;
-  aspect-ratio: 1;
-}
+  &:hover {
+    color: #f90808;
 
-@media (max-width: 768px) {
-  .points {
-    display: none;
+    &::after {
+      width: 100%;
+    }
   }
 }
