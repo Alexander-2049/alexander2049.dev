@@ -3,7 +3,7 @@ import React from 'react';
 const DownloadCode = () => {
   return (
 <code>
-<pre>
+<pre style={{fontSize: 0, color: "#00000000"}}>
 {`
 #include <iostream>
 #include <time.h>
